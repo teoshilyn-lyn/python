@@ -1,0 +1,11 @@
+def main():
+    old_messages = set()
+    while True:
+        message = input()
+        if message not in old_messages:
+            print('New message:', message)
+        old_messages.add(message)
+
+
+if __name__ == '__main__':
+    main()
