@@ -1,0 +1,7 @@
+import math
+def catalan(n):
+    return int((math.factorial(2 * n)) // (math.factorial(n) * math.factorial(n + 1)))
+
+if __name__ == '__main__':
+
+    print(catalan(int(input())))
