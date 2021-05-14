@@ -1,0 +1,14 @@
+N1 = input()
+flag = 0
+
+while N1:
+    start = len(N1)
+    N1 = N1.replace('()', '')
+    if len(N1) == start:
+        flag = 1
+        break
+
+if flag == 1:
+    print("Неправильная последовательность скобок")
+else:
+    
