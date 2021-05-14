@@ -1,0 +1,8 @@
+def transformation(x):
+    return x*2
+ 
+def simple_map(transformation, values):
+    return [transformation(x) for x in values]
+ 
+lst = [1,2,3,4,5,6,7,8,9]
+print(simple_map(transformation, lst))
